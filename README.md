@@ -8,7 +8,8 @@ This theme is based on FoundationPress (https://foundationpress.olefredrik.com/)
 - The remote was set to this repo ... `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`
 - Use `$ git remote -v` to view the repo connections to origin and upstream
 - `$ npm install`
-- `$ npm run build`
+- `$ npm run build` for changes to CSS and JS bundles, then  FTP individual files
+- `$ npm run package` for entire theme, then unzip and FTP everything or just upload zip and activate (delete old theme if using this method)
 
 **********************************************
 
