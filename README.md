@@ -1,7 +1,12 @@
 # Custom Theme for GreenBankObservatory.org
 
 ## Background
-This theme is based on FoundationPress (https://foundationpress.olefredrik.com/).
+This theme is based on FoundationPress (https://foundationpress.olefredrik.com/).  Use `$ git remote -v` to view the repo connections to origin and upstream.
+
+git remote rename origin upstream
+
+git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git
+
 
 **********************************************
 
