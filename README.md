@@ -1,4 +1,11 @@
-# FoundationPress
+# Custom Theme for GreenBankObservatory.org
+
+## Background
+This theme is based on FoundationPress (https://foundationpress.olefredrik.com/).
+
+**********************************************
+
+# FoundationPress (copied from their README)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olefredrik/foundationpress?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![GitHub version](https://badge.fury.io/gh/olefredrik%2Ffoundationpress.svg)](https://github.com/olefredrik/FoundationPress/releases)
