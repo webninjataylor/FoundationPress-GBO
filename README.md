@@ -4,8 +4,8 @@
 This theme is based on FoundationPress (https://foundationpress.olefredrik.com/).
 
 - This was cloned from version 2.10.4 of FoundationPress (33 releases)
-- The origin was switched to upstream ... `git remote rename origin upstream`
-- The remote was set to this repo ... `git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`
+- The origin was switched to upstream ... `$ git remote rename origin upstream`
+- The remote was set to this repo ... `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`
 - Use `$ git remote -v` to view the repo connections to origin and upstream
 
 **********************************************
