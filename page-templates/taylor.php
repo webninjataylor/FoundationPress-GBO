@@ -11,7 +11,7 @@ get_header(); ?>
         <div class="main-grid">
             <header class="kitchen-sink-header">
                 <h1 class="entry-title"><?php the_title(); ?> [Taylor's Test]</h1><hr>
-                <p class="lead">This page includes every single Foundation element so that we can make sure things work together smoothly. (Taylor was here.)</p><hr>
+                <p class="lead">This page includes every single Foundation element so that we can make sure things work together smoothly. (Taylor was here [test].)</p><hr>
             </header>
 
             <!-- Main wrapper for the components in the kitchen-sink -->
