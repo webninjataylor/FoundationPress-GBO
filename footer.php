@@ -16,6 +16,11 @@
         <div class="footer-grid">
         		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/NSF_logo_sm.png" />
 						<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/aui-rev2@120W.png" />
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-flickr"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-vimeo"></i>
+						<i class="far fa-envelope"></i>
             <?php dynamic_sidebar( 'footer-widgets' ); ?>
         </div>
     </div>
