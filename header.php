@@ -48,4 +48,11 @@
 			</div>
 		</nav>
 
+		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/FPO_header.png" />
+		<div>Announcement</div>
+		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/logo.png" />
+		<div>&quot;Utility&quot; Menu</div>
+		<div>Search</div>
+		<div>Main Menu</div>
+
 	</header>
