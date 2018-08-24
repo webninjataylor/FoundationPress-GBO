@@ -37,10 +37,14 @@
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<!-- GBO: Image instead of site name -->
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/logo.png" /></a>
 				</div>
 			</div>
 			<div class="top-bar-right">
+				<!-- GBO: Utility menu and search -->
+				<div class="menu-utility"><?php foundationpress_top_bar_util(); ?></div>
+				<div class="menu-search"><?php get_search_form(); ?></div>
 				<?php foundationpress_top_bar_r(); ?>
 
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
@@ -48,57 +52,4 @@
 				<?php endif; ?>
 			</div>
 		</nav>
-
-
-
-
-
-
-
-
-		<!-- START GBO EDITS (On Scroll, header flattens (smaller logo, minimized Nav)) -->
-		<?php foundationpress_top_bar_util(); ?>
-		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/FPO_header.png" />
-		<div>Announcement</div>
-		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/logo.png" />
-		<div>&quot;Utility&quot; Menu</div>
-		<div>Search</div>
-		<div>Main Menu</div>
-
-
-		<!-- Top bar -->
-		<h2 id="top-bar" class="docs-heading" data-magellan-target="top-bar"><a href="#top-bar"></a>Top Bar</h2>
-		<div class="top-bar">
-			<div class="top-bar-left">
-				<ul class="dropdown menu" data-dropdown-menu>
-					<li class="menu-text">Site Title</li>
-					<li class="has-submenu">
-						<a href="#">One</a>
-						<ul class="submenu menu vertical" data-submenu>
-							<li><a href="#">One</a></li>
-							<li><a href="#">Two</a></li>
-							<li><a href="#">Three</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#">Three</a></li>
-				</ul>
-			</div>
-
-			<div class="top-bar-right">
-				<ul class="menu">
-					<li><input type="search" placeholder="Search"></li>
-					<li><button type="button" class="button">Search</button></li>
-				</ul>
-			</div>
-		</div>
-		<!-- END GBO EDITS -->
-
-
-
-
-
-
-
-
 	</header>
