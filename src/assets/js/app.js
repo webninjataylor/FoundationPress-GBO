@@ -9,3 +9,8 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
+
+console.log('LINKS =', $('a').length);
+$(function(){
+  console.log('LINKS AFTER LOAD =', $('a').length);
+});
