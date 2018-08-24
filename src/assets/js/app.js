@@ -10,7 +10,18 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-console.log('LINKS =', $('a').length);
 $(function(){
-  console.log('LINKS AFTER LOAD =', $('a').length);
+  // ***************************************************************************
+  // EXTERNAL LINKS: Method for setting all external links to open in a new tab.
+  // ***************************************************************************
+  var gbo = window.location.hostname;
+  var isAbsolute = '://';
+  $.each($('a'), function(i, link){   // For each link on the page...
+    var linkHREF = $(link).attr('href');
+    if(linkHREF.includes(isAbsolute)){   // ...check if the href is absolute...
+      if(!linkHREF.includes(gbo)){   // ...if absolute, check if within the same domain...
+        $(link).attr('target', '_blank');   // ...if not the same domain, open the link in a new tab.
+      }
+    }
+  });
 });
