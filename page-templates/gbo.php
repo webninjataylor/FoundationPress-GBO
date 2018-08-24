@@ -67,7 +67,7 @@ get_header(); ?>
 
 
 
-
+				<?php gbo_breadcrumbs(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
