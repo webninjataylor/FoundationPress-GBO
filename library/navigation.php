@@ -11,6 +11,7 @@ register_nav_menus(
 	array(
 		'top-bar-r'  => esc_html__( 'Right Top Bar', 'foundationpress' ),
 		'top-bar-util'  => esc_html__( 'Top Bar Utilities', 'foundationpress' ),
+		'rh-nav-visit'  => esc_html__( 'Right-hand Nav - Visit', 'foundationpress' ),
 		'mobile-nav' => esc_html__( 'Mobile', 'foundationpress' ),
 	)
 );
@@ -54,6 +55,28 @@ if ( ! function_exists( 'foundationpress_top_bar_util' ) ) {
 				'depth'          => 3,
 				'fallback_cb'    => false,
 				'walker'         => new Foundationpress_Top_Bar_Util_Walker(),
+			)
+		);
+	}
+}
+
+
+/**
+ * Desktop navigation - "Right-hand Nav - Visit"
+ *
+ * @link http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
+if ( ! function_exists( 'foundationpress_rh_nav_visit' ) ) {
+	function foundationpress_rh_nav_visit() {
+		wp_nav_menu(
+			array(
+				'container'      => false,
+				'menu_class'     => 'rh-nav',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'theme_location' => 'rh-nav-visit',
+				'depth'          => 3,
+				'fallback_cb'    => false,
+				'walker'         => new Foundationpress_RH_Nav_Visit_Walker(),
 			)
 		);
 	}

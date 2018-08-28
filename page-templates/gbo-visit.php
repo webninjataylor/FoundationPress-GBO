@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: GBO - Right-hand Nav
+Template Name: GBO - Visit
 */
 get_header(); ?>
 
@@ -14,7 +14,7 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
 		</main>
-		<?php get_sidebar(); ?>
+		<?php foundationpress_rh_nav_visit(); ?>
 	</div>
 </div>
 <?php get_footer();
