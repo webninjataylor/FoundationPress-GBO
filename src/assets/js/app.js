@@ -24,4 +24,7 @@ $(function(){
       }
     }
   });
+  if($('#crumbs').length === 1){
+    $('.main-content header').append($('#crumbs').remove());   // Moves breadcrumbs below page title.
+  }
 });
