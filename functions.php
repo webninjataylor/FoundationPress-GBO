@@ -30,6 +30,9 @@ require_once( 'library/navigation.php' );
 require_once( 'library/class-foundationpress-top-bar-walker.php' );
 require_once( 'library/class-foundationpress-top-bar-util-walker.php' );
 require_once( 'library/class-foundationpress-rh-nav-visit-walker.php' );
+require_once( 'library/class-foundationpress-rh-nav-education-walker.php' );
+require_once( 'library/class-foundationpress-rh-nav-science-walker.php' );
+require_once( 'library/class-foundationpress-rh-nav-articles-walker.php' );
 require_once( 'library/class-foundationpress-mobile-walker.php' );
 
 /** Create widget areas in sidebar and footer */

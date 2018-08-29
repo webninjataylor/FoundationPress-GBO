@@ -12,6 +12,9 @@ register_nav_menus(
 		'top-bar-r'  => esc_html__( 'Right Top Bar', 'foundationpress' ),
 		'top-bar-util'  => esc_html__( 'Top Bar Utilities', 'foundationpress' ),
 		'rh-nav-visit'  => esc_html__( 'Right-hand Nav - Visit', 'foundationpress' ),
+		'rh-nav-education'  => esc_html__( 'Right-hand Nav - Education', 'foundationpress' ),
+		'rh-nav-science'  => esc_html__( 'Right-hand Nav - Science', 'foundationpress' ),
+		'rh-nav-articles'  => esc_html__( 'Right-hand Nav - Articles', 'foundationpress' ),
 		'mobile-nav' => esc_html__( 'Mobile', 'foundationpress' ),
 	)
 );
@@ -77,6 +80,69 @@ if ( ! function_exists( 'foundationpress_rh_nav_visit' ) ) {
 				'depth'          => 3,
 				'fallback_cb'    => false,
 				'walker'         => new Foundationpress_RH_Nav_Visit_Walker(),
+			)
+		);
+	}
+}
+
+/**
+ * Desktop navigation - "Right-hand Nav - Education"
+ *
+ * @link http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
+if ( ! function_exists( 'foundationpress_rh_nav_education' ) ) {
+	function foundationpress_rh_nav_education() {
+		wp_nav_menu(
+			array(
+				'container'      => false,
+				'menu_class'     => 'rh-nav',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'theme_location' => 'rh-nav-education',
+				'depth'          => 3,
+				'fallback_cb'    => false,
+				'walker'         => new Foundationpress_RH_Nav_Education_Walker(),
+			)
+		);
+	}
+}
+
+/**
+ * Desktop navigation - "Right-hand Nav - Science"
+ *
+ * @link http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
+if ( ! function_exists( 'foundationpress_rh_nav_science' ) ) {
+	function foundationpress_rh_nav_science() {
+		wp_nav_menu(
+			array(
+				'container'      => false,
+				'menu_class'     => 'rh-nav',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'theme_location' => 'rh-nav-science',
+				'depth'          => 3,
+				'fallback_cb'    => false,
+				'walker'         => new Foundationpress_RH_Nav_Science_Walker(),
+			)
+		);
+	}
+}
+
+/**
+ * Desktop navigation - "Right-hand Nav - Articles"
+ *
+ * @link http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
+if ( ! function_exists( 'foundationpress_rh_nav_articles' ) ) {
+	function foundationpress_rh_nav_articles() {
+		wp_nav_menu(
+			array(
+				'container'      => false,
+				'menu_class'     => 'rh-nav',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'theme_location' => 'rh-nav-articles',
+				'depth'          => 3,
+				'fallback_cb'    => false,
+				'walker'         => new Foundationpress_RH_Nav_Articles_Walker(),
 			)
 		);
 	}
