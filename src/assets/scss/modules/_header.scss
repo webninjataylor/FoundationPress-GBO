@@ -9,7 +9,14 @@
     display: flex;
     justify-content: flex-end;
     .fab, .far {
-      margin: 10px;
+      background-color: #fff;
+      border-radius: 100px;
+      color: $gbo-dark1;
+      height: 30px;
+      margin: 7px;
+      padding: 7px;
+      text-align: center;
+      width: 30px;
     }
   }
 }
