@@ -36,24 +36,29 @@
 
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
+			</div>
+			<div class="top-bar-right">
+				<!-- GBO: Social links, utility menu, and search -->
+				<div class="menu-util">
+					<a href="https://twitter.com/grnbnktelescope"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/GreenBankScienceCenter/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.flickr.com/photos/148446505@N04/"><i class="fab fa-flickr"></i></a>
+					<a href="https://vimeo.com/greenbankobservatory"><i class="fab fa-vimeo"></i></a>
+					<a href="mailto:visit@gbobservatory.org"><i class="far fa-envelope"></i></a>
+					<?php foundationpress_top_bar_util(); ?>
+					<?php get_search_form(); ?>
+				</div>
+			</div>
+		</nav>
+		<nav class="site-navigation top-bar" role="navigation">
+			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
 					<!-- GBO: Image instead of site name -->
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/logo.png" /></a>
 				</div>
 			</div>
 			<div class="top-bar-right">
-				<!-- GBO: Social links, utility menu, and search -->
-				<div class="menu-social">
-					<a href="https://www.facebook.com/GreenBankScienceCenter/"><i class="fab fa-facebook-f"></i></a>
-					<a href="https://www.flickr.com/photos/148446505@N04/"><i class="fab fa-flickr"></i></a>
-					<a href="https://twitter.com/grnbnktelescope"><i class="fab fa-twitter"></i></a>
-					<a href="https://vimeo.com/greenbankobservatory"><i class="fab fa-vimeo"></i></a>
-					<a href="mailto:visit@gbobservatory.org"><i class="far fa-envelope"></i></a>
-				</div>
-				<div class="menu-utility"><?php foundationpress_top_bar_util(); ?></div>
-				<div class="menu-search"><?php get_search_form(); ?></div>
 				<?php foundationpress_top_bar_r(); ?>
-
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>

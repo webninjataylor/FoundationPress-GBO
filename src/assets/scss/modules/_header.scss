@@ -5,4 +5,11 @@
   a {
     color: #fff;
   }
+  .menu-util {
+    display: flex;
+    justify-content: flex-end;
+    .fab, .far {
+      margin: 10px;
+    }
+  }
 }
