@@ -59,6 +59,7 @@ get_header(); ?>
 
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
+			<button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 		</main>
 	</div>
 </div>

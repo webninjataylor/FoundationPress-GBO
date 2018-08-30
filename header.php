@@ -43,7 +43,7 @@
 					<a href="https://twitter.com/grnbnktelescope"><i class="fab fa-twitter"></i></a>
 					<a href="https://www.facebook.com/GreenBankScienceCenter/"><i class="fab fa-facebook-f"></i></a>
 					<a href="https://www.flickr.com/photos/148446505@N04/"><i class="fab fa-flickr"></i></a>
-					<a href="https://vimeo.com/greenbankobservatory"><i class="fab fa-vimeo"></i></a>
+					<a href="https://vimeo.com/greenbankobservatory"><i class="fab fa-vimeo-v"></i></a>
 					<a href="mailto:visit@gbobservatory.org"><i class="far fa-envelope"></i></a>
 					<?php foundationpress_top_bar_util(); ?>
 					<?php get_search_form(); ?>

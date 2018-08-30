@@ -30,48 +30,14 @@ $(function(){
   if($('#crumbs').length === 1){
     $('.main-content header').append($('#crumbs').remove());
   }
+  // ***********************************************************************
+  // SCROLL-TO-TOP: Scrolling to the top of the page via Back-to-top button.
+  // ***********************************************************************
+  if($('#backToTop').length === 1) {
+    $('#backToTop').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    });
+  }
 });
-
-// Click function for back-to-top
-// document.body.scrollTop = 0; // For Safari
-// document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-/*
-#myBtn {
-    display: none; / Hidden by default /
-    position: fixed; / Fixed/sticky position /
-    bottom: 20px; / Place the button at the bottom of the page /
-    right: 30px; / Place the button 30px from the right /
-    z-index: 99; / Make sure it does not overlap /
-    border: none; / Remove borders /
-    outline: none; / Remove outline /
-    background-color: red; / Set a background color /
-    color: white; / Text color /
-    cursor: pointer; / Add a mouse pointer on hover /
-    padding: 15px; / Some padding /
-    border-radius: 10px; / Rounded corners /
-    font-size: 18px; / Increase font size /
-}
-
-#myBtn:hover {
-    background-color: #555; / Add a dark-grey background on hover /
-}
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
- */
