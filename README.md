@@ -146,16 +146,6 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 * [Clean FoundationPress install](http://foundationpress.olefredrik.com/)
 * [FoundationPress Kitchen Sink - see every single element in action](http://foundationpress.olefredrik.com/kitchen-sink/)
 
-## Local Development
-We recommend using one of the following setups for local WordPress development:
-
-* [MAMP](https://www.mamp.info/en/) (macOS)
-* [WAMP](http://www.wampserver.com/en/download-wampserver-64bits/) (Windows)
-* [LAMP](https://www.linux.com/learn/easy-lamp-server-installation) (Linux)
-* [Local](https://local.getflywheel.com/) (macOS/Windows)
-* [VVV (Varying Vagrant Vagrants)](https://github.com/Varying-Vagrant-Vagrants/VVV) (Vagrant Box)
-* [Trellis](https://roots.io/trellis/)
-
 ## Resources
 
 * [Foundation UI Kit for Adobe XD](https://gumroad.com/l/foundation-ui-kit-xd)
@@ -171,57 +161,11 @@ We recommend using one of the following setups for local WordPress development:
 * [Learn to use the _settings file to change almost every aspect of a Foundation site](http://zurb.com/university/lessons/66)
 * [Other lessons from Zurb University](http://zurb.com/university/past-lessons)
 
-## Documentation
+## Additional Documentation
 
 * [Zurb Foundation Docs](http://foundation.zurb.com/docs/)
 * [WordPress Codex](http://codex.wordpress.org/)
 
-## Showcase
-
-* [Harvard Center for Green Buildings and Cities](http://www.harvardcgbc.org/)
-* [INTI International University & Colleges](http://international.newinti.edu.my/)
-* [Conservative Leadership Conference](http://civitasclc.com/)
-* [The New Tropic](http://thenewtropic.com/)
-* [Parent-Child Home Program](http://www.parent-child.org/)
-* [Hip and Healthy](http://hipandhealthy.com/)
-* [Threadbird blog](http://blog.threadbird.com/)
-* [Public House Wines](http://publichousewine.com/)
-* [Franchise Career Advisors](http://franchisecareeradvisors.com/)
-* [Le saint](http://www.lesaint.ca/)
-* [Help blog](http://help.com/blog/)
-* [Maren Schmidt](http://marenschmidt.com/)
-* [The Rainbow Venues](http://www.therainbowvenues.co.uk/)
-* [Ameronix](http://www.ameronix.com/)
-* [Finnerodja](http://www.finnerodja.se/)
-* [Glossop Cartons](http://www.glossopcartons.co.uk/)
-* [Ready4Work](http://www.ready4work.my/)
-* [Just Legal](http://www.justlegal.co.jp/en/)
-* [Vintage and Stuff](http://vintageandstuff.com/)
-* [Software for FM](http://softwareforfm.co.uk/)
-* [WP Diamonds](http://www.wpdiamonds.com/)
-* [Storm Arts](http://stormarts.fi/)
-* [USS Illinois](http://ussillinois.org/)
-* [OffGrid Magazine](https://offgridweb.com/)
-* [Axe](http://www.axe.be/)
-* [ProfitGym](http://profitgym.nl/)
-* [Dr Now](http://www.drnow.com/)
-* [Agritur Piasina](http://www.agriturpiasina.it/)
-* [Atomic Interactive](http://atomicinteractive.com/)
-* [Byington Vineyard & Winery](http://byington.com/)
-* [Philanthropy House](http://philanthropyhouse.eu/)
-* [TVA Group](http://www.groupe-tva.com/en/)
-* [Forte Science](https://www.forte-science.co.jp/)
-* [Well Made Studio](http://wellmadestudio.com/)
-* [Show And Tell](http://www.showandtelluk.com/)
-* [Wahl + Case](https://www.wahlandcase.com/)
-* [Forefront Dermatology](https://forefrontdermatology.com/)
-* [Wirthschaftsjunioren](http://www.wirtschaftsjunioren.org/)
-* [Morgridge Institute for Research](https://morgridge.org)
-* [Impeach Trump Now](https://impeachdonaldtrumpnow.org/)
-* [La revanche des sites](https://www.la-revanche-des-sites.fr/)
-
-
->Credit goes to all the brilliant designers and developers out there. Have **you** made a site that should be on this list? [Please let me know](https://twitter.com/olefredrik)
 
 ## Contributing
 #### Here are ways to get involved:
