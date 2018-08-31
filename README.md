@@ -3,7 +3,7 @@
 ## Background
 This theme is based on FoundationPress (https://foundationpress.olefredrik.com/).
 
-- This was cloned from version 2.10.4 of FoundationPress (33 releases)
+- This was cloned from version 2.10.4 of [FoundationPress](https://github.com/olefredrik/FoundationPress)
 - The origin was switched to upstream ... `$ git remote rename origin upstream`
 - The remote was set to this repo ... `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`
 - Use `$ git remote -v` to view the repo connections to origin and upstream
@@ -70,19 +70,6 @@ $ cd FoundationPress
 $ npm install
 ```
 
-### 2. Configuration
-
-#### YAML config file
-FoundationPress includes a `config-default.yml` file. To make changes to the configuration, make a copy of `config-default.yml` and name it `config.yml` and make changes to that file. The `config.yml` file is ignored by git so that each environment can use a different configuration with the same git repo.
-
-At the start of the build process a check is done to see if a `config.yml` file exists. If `config.yml` exists, the configuration will be loaded from `config.yml`. If `config.yml` does not exist, `config-default.yml` will be used as a fallback.
-
-#### Browsersync setup
-If you want to take advantage of [Browsersync](https://www.browsersync.io/) (automatic browser refresh when a file is saved), simply open your `config.yml` file after creating it in the previous step, and put your local dev-server address and port (e.g http://localhost:8888) in the `url` property under the `BROWSERSYNC` object.
-
-#### Static asset hashing / cache breaker
-If you want to make sure your users see the latest changes after re-deploying your theme, you can enable static asset hashing. In your `config.yml`, set ``REVISIONING: true;``. Hashing will work on the ``npm run build`` and ``npm run dev`` commands. It will not be applied on the start command with browsersync. This is by design.  Hashing will only change if there are actual changes in the files.
-
 ### 3. Get started
 
 ```bash
@@ -146,14 +133,6 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 * [Clean FoundationPress install](http://foundationpress.olefredrik.com/)
 * [FoundationPress Kitchen Sink - see every single element in action](http://foundationpress.olefredrik.com/kitchen-sink/)
 
-## Resources
-
-* [Foundation UI Kit for Adobe XD](https://gumroad.com/l/foundation-ui-kit-xd)
-* [Foundation UI Kit for Axure RP](https://gumroad.com/l/foundation-ui-kit-axure-rp)
-* [Foundation UI Kit for Photoshop](https://gumroad.com/l/foundation-ui-kit-psd)
-* [Foundation 6 Shortcodes for Visual Composer](https://www.402websites.com/downloads/foundation-6-shortcodes-visual-composer/?ref=2&campaign=Foundation6ShortcodesforVisualComposer)
-
-
 ## Tutorials
 
 * [FoundationPress for beginners](https://foundationpress.olefredrik.com/posts/tutorials/foundationpress-for-beginners/)
@@ -166,21 +145,3 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 * [Zurb Foundation Docs](http://foundation.zurb.com/docs/)
 * [WordPress Codex](http://codex.wordpress.org/)
 
-
-## Contributing
-#### Here are ways to get involved:
-
-1. [Star](https://github.com/olefredrik/FoundationPress/stargazers) the project!
-2. Answer questions that come through [GitHub issues](https://github.com/olefredrik/FoundationPress/issues)
-3. Report a bug that you find
-4. Share a theme you've built on top of FoundationPress
-5. [Tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffoundationpress.olefredrik.com%2F&text=Check%20out%20FoundationPress%2C%20the%20ultimate%20%23WordPress%20starter-theme%20built%20on%20%23Foundation%206&tw_p=tweetbutton&url=http%3A%2F%2Ffoundationpress.olefredrik.com&via=olefredrik) and [blog](http://www.justinfriebel.com/my-first-experience-with-foundationpress-a-wordpress-starter-theme-106/) your experience of FoundationPress.
-
-#### Pull Requests
-
-Pull requests are highly appreciated. Please follow these guidelines:
-
-1. Solve a problem. Features are great, but even better is cleaning-up and fixing issues in the code that you discover
-2. Make sure that your code is bug-free and does not introduce new bugs
-3. Create a [pull request](https://help.github.com/articles/creating-a-pull-request)
-4. Verify that all the Travis-CI build checks have passed
