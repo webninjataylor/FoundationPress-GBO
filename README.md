@@ -11,6 +11,30 @@ This theme is based on FoundationPress (https://foundationpress.olefredrik.com/)
 - `$ npm run build` for changes to CSS and JS bundles, then  FTP individual files
 - `$ npm run package` for entire theme, then unzip and FTP everything or just upload zip and activate (delete old theme if using this method)
 
+- FontAwesome
+- Google Fonts
+
+- Tabs
+```bash
+<!-- Tabs -->
+<ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+    <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+        <p>Content for Tab 1</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+        <p>Content for Tab 2</p>
+    </div>
+    <div class="tabs-panel" id="panel3">
+        <p>Content for Tab 3</p>
+    </div>
+</div>
+```
+
 **********************************************
 
 # FoundationPress (copied from their README)
