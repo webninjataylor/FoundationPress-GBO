@@ -6,6 +6,10 @@
     @include xy-grid-container;
     border-top: 1px solid $medium-gray;
     margin-top: rem-calc(60);
+    #menu-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .footer-grid {
     @include xy-grid;
