@@ -9,10 +9,13 @@ This theme is based on FoundationPress (https://foundationpress.olefredrik.com/)
 - `$ npm run build` for changes to CSS and JS bundles, then FTP individual files
 - `$ npm run package` for entire theme, then unzip and FTP everything or just upload zip and activate (delete old theme if using this method)
 
-- FontAwesome
-- Google Fonts
+## Features Beyond FoundationPress
+- FontAwesome is included within the SASS files
+- Google Fonts is included within header.php for Montserrat and Abel
 
-- Tabs
+## Content Pages with Tabs
+- Select any GBO template
+- Choose the HTML editor and use the following markup
 ```bash
 <!-- Tabs -->
 <ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="example-tabs">
