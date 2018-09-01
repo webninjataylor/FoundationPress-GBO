@@ -40,4 +40,16 @@ $(function(){
       }, 1000);
     });
   }
+  // *****************************************************************************
+  // STICKY HEADER: Scrolling on the page locks the header to the top of the page.
+  // *****************************************************************************
+  var gboHeader = $('.site-header');
+  var gboSticky = gboHeader.offset().top;
+  window.onscroll = function() {
+    if (window.pageYOffset > gboSticky) {
+      gboHeader.addClass('sticky');
+    } else {
+      gboHeader.removeClass('sticky');
+    }
+  };
 });
