@@ -1,9 +1,12 @@
 # Custom Theme for GreenBankObservatory.org
 
 ## Background
-This theme is based on FoundationPress (https://foundationpress.olefredrik.com/), cloned from version 2.10.4 of [the FoundationPress WordPress theme](https://github.com/olefredrik/FoundationPress). The origin was switched to upstream ... `$ git remote rename origin upstream` and the remote was set to this repo ... `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git` so future upates from FoundationPress can be merged into this repository. Use `$ git remote -v` to view the repo connections to origin and upstream.
+This theme is based on FoundationPress (https://foundationpress.olefredrik.com/), cloned from version 2.10.4 of [the FoundationPress WordPress theme](https://github.com/olefredrik/FoundationPress). The origin of this repo was switched to upstream with `$ git remote rename origin upstream`, and the remote was set to this repo with `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`.  This combination allows for future updates to this theme through manual, controlled merging from the parent.
+
+## Getting Started
+- Clone this repository (Note: you may need to check the repo connections to origin and upstream with `$ git remote -v`)
 - `$ npm install`
-- `$ npm run build` for changes to CSS and JS bundles, then  FTP individual files
+- `$ npm run build` for changes to CSS and JS bundles, then FTP individual files
 - `$ npm run package` for entire theme, then unzip and FTP everything or just upload zip and activate (delete old theme if using this method)
 
 - FontAwesome
