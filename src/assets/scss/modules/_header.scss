@@ -19,9 +19,13 @@
       width: 30px;
     }
   }
-  .top-bar-left img {
+  .top-bar-left  img {
     transition: width 0.5s;
     width: 213px;
+  }
+  .top-bar-right {
+    display: flex;
+    justify-content: flex-end;
   }
   &.sticky {
     position: fixed;
