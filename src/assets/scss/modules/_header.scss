@@ -19,13 +19,28 @@
       width: 30px;
     }
   }
+  .top-bar-left img {
+    transition: width 5s;
+  }
   &.sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    .top-bar-left img {
+      width: 100px;
+    }
+    .menu-util {
+      display: none;
+    }
+    .menu-util-sticky {
+      display: block;
+    }
+  }
+  .menu-util-sticky {
+    display: none;
   }
 }
-
+/* Adjustment for sticky nav placement when logged into WP as an admin. */
 .admin-bar .site-header.sticky {
   top: 32px;
 }
