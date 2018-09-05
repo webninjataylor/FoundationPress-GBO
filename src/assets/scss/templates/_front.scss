@@ -107,6 +107,16 @@
 
 // Intro
 .intro {
+  background-color: $gbo-green;
+  font-family: 'Abel';
+  padding: 20px !important;
+  text-align: center;
+  text-transform: uppercase;
+
+  p {
+    margin: 0;
+  }
+
   @include xy-grid-container;
   @include xy-grid;
 

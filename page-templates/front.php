@@ -52,36 +52,25 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
-<div class="section-divider">
-	<hr />
-</div>
+
 
 
 
 
 
 <!-- GBO: TEST CARDS -->
+<div class="main-container">
+        <div class="main-grid">
+
 <div class="cards-container">
 	<?php $catquery = new WP_Query( 'cat=9&posts_per_page=6' ); ?>
 		<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-			<h3><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			<div><?php the_content(); ?></div>
+			<div class="card"><?php the_content(); ?></div> <!-- Can use the_title() and the_permalink() too -->
 		<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>
-
-	<div class="card">
-	    <img src="https://placeimg.com/300/200/nature">
-	    <div class="card-content">
-	        <h4>Menus</h4>
-	        <p>Cards play nicely with menus too! Give them a try.</p>
-	        <ul class="menu simple">
-	            <li><a href="#">One</a></li>
-	            <li><a href="#">Two</a></li>
-	            <li><a href="#">Three</a></li>
-	        </ul>
-	    </div>
-	</div>
 </div>
+
+</div></div>
 
 
 
