@@ -3,11 +3,21 @@
 ## Background
 This theme is based on FoundationPress (https://foundationpress.olefredrik.com/), cloned from version 2.10.4 of [the FoundationPress WordPress theme](https://github.com/olefredrik/FoundationPress). The origin of this repo was switched to upstream with `$ git remote rename origin upstream`, and the remote was set to this repo with `$ git remote set-url origin git@github.com:webninjataylor/FoundationPress-GBO.git`.  This combination allows for future updates to this theme through manual, controlled merging from the parent.
 
+## Requirements
+
+**This project requires [Node.js](http://nodejs.org) v4.x.x to v6.11.x to be installed on your machine.** Please be aware that you might encounter problems with the installation if you are using the most current Node version (bleeding edge) with all the latest features.
+
+FoundationPress uses [Sass](http://Sass-lang.com/) (CSS with superpowers). In short, Sass is a CSS pre-processor that allows you to write styles more effectively and tidy.
+
+The Sass is compiled using libsass, which requires the GCC to be installed on your machine. Windows users can install it through [MinGW](http://www.mingw.org/), and Mac users can install it through the [Xcode Command-line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
+
+If you have not worked with a Sass-based workflow before, I would recommend reading [FoundationPress for beginners](https://foundationpress.olefredrik.com/posts/tutorials/foundationpress-for-beginners), a short blog post that explains what you need to know.
+
 ## Getting Started
 - Clone this repository (Note: you may need to check the repo connections to origin and upstream with `$ git remote -v`)
 - `$ npm install`
 - `$ npm run build` for changes to CSS and JS bundles, then FTP individual files
-- `$ npm run package` for entire theme, then unzip and FTP everything or just upload zip and activate (delete old theme if using this method)
+- `$ npm run package` for entire theme, then upload zip and activate (delete old theme if using this method)
 
 ## Features Beyond FoundationPress
 - FontAwesome is included within the SASS files
@@ -39,22 +49,6 @@ This theme is based on FoundationPress (https://foundationpress.olefredrik.com/)
 **********************************************
 
 # FoundationPress (copied from their README)
-
-This is a starter-theme for WordPress based on Zurb's [Foundation for Sites 6](https://foundation.zurb.com/sites.html), the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
-
-Please fork, copy, modify, delete, share or do whatever you like with this.
-
-All contributions are welcome!
-
-## Requirements
-
-**This project requires [Node.js](http://nodejs.org) v4.x.x to v6.11.x to be installed on your machine.** Please be aware that you might encounter problems with the installation if you are using the most current Node version (bleeding edge) with all the latest features.
-
-FoundationPress uses [Sass](http://Sass-lang.com/) (CSS with superpowers). In short, Sass is a CSS pre-processor that allows you to write styles more effectively and tidy.
-
-The Sass is compiled using libsass, which requires the GCC to be installed on your machine. Windows users can install it through [MinGW](http://www.mingw.org/), and Mac users can install it through the [Xcode Command-line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
-
-If you have not worked with a Sass-based workflow before, I would recommend reading [FoundationPress for beginners](https://foundationpress.olefredrik.com/posts/tutorials/foundationpress-for-beginners), a short blog post that explains what you need to know.
 
 ## Quickstart
 
