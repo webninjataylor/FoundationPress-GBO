@@ -19,44 +19,11 @@ If you have not worked with a Sass-based workflow before, I would recommend read
 - `$ npm run build` for changes to CSS and JS bundles; the files will be minified in your /dist folder.
 - `$ npm run package` for entire theme, then upload zip and activate (delete old theme if using this method). Running this command will build and minify the theme's assets and place a .zip archive of the theme in the `packaged` directory. This excludes the developer files/directories from your theme like `/node_modules`, `/src`, etc. to keep the theme lightweight for transferring the theme to a staging or production server.
 
-## Features Beyond FoundationPress
-- FontAwesome is included within the SASS files
-- Google Fonts is included within header.php for Montserrat and Abel
-
-## Content Pages with Tabs
-- Select any GBO template
-- Choose the HTML editor and use the following markup
-```bash
-<!-- Tabs -->
-<ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-    <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
-</ul>
-<div class="tabs-content" data-tabs-content="example-tabs">
-    <div class="tabs-panel is-active" id="panel1">
-        <p>Content for Tab 1</p>
-    </div>
-    <div class="tabs-panel" id="panel2">
-        <p>Content for Tab 2</p>
-    </div>
-    <div class="tabs-panel" id="panel3">
-        <p>Content for Tab 3</p>
-    </div>
-</div>
-```
-
-**********************************************
-
-# FoundationPress (copied from their README)
-
 ### Project structure
 
 In the `/src` folder you will the working files for all your assets. Every time you make a change to a file that is watched by Gulp, the output will be saved to the `/dist` folder. The contents of this folder is the compiled code that you should not touch (unless you have a good reason for it).
 
 The `/page-templates` folder contains templates that can be selected in the Pages section of the WordPress admin panel. To create a new page-template, simply create a new file in this folder and make sure to give it a template name.
-
-I guess the rest is quite self explanatory. Feel free to ask if you feel stuck.
 
 ### Styles and Sass Compilation
 
@@ -85,6 +52,33 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 * In `config.yml`, add `src/assets/js/custom.js` to `PATHS.entries`.
 * Build (`npm start`)
 * You will now have a `custom.js` file outputted to the `dist/assets/js/` directory.
+
+## Features Beyond FoundationPress
+- FontAwesome is included within the SASS files
+- Google Fonts is included within header.php for Montserrat and Abel
+
+## Content Pages with Tabs
+- Select any GBO template
+- Choose the HTML editor and use the following markup
+```bash
+<!-- Tabs -->
+<ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+    <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+        <p>Content for Tab 1</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+        <p>Content for Tab 2</p>
+    </div>
+    <div class="tabs-panel" id="panel3">
+        <p>Content for Tab 3</p>
+    </div>
+</div>
+```
 
 ## Demo
 
