@@ -53,11 +53,16 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 * Build (`npm start`)
 * You will now have a `custom.js` file outputted to the `dist/assets/js/` directory.
 
-## Features Beyond FoundationPress
+## GBO Customizations
+### Features Beyond FoundationPress
 - FontAwesome is included within the SASS files
 - Google Fonts is included within header.php for Montserrat and Abel
 
-## Content Pages with Tabs
+### Home Page Hero
+
+### Home Page Cards
+
+### Content Pages with Tabs
 - Select any GBO template
 - Choose the HTML editor and use the following markup
 ```bash
