@@ -61,11 +61,13 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 ### Home Page Hero
 
 ### Home Page Cards
-The home page news cards are pulled from the Home Page Card post category.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
+The home page news cards are pulled from the Home Page Card post category.  This approach allows for greater control over the appearance and content of the cards as opposed to parsing posts for truncated content.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
 
-`<?php $catquery = new WP_Query( 'cat=9&posts_per_page=6' ); ?>`
+```bash
+<?php $catquery = new WP_Query( 'cat=9&posts_per_page=6' ); ?>
+```
 
-The posts can handle any HTML markup, and the following is a good starting point...
+The posts can handle any HTML markup with the following suggested starting point...
 
 ```bash
 <img src="[recommended 300x200 image]">
