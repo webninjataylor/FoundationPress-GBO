@@ -16,8 +16,8 @@ If you have not worked with a Sass-based workflow before, I would recommend read
 ## Getting Started
 - Clone this repository (Note: you may need to check the repo connections to origin and upstream with `$ git remote -v`)
 - `$ npm install`
-- `$ npm run build` for changes to CSS and JS bundles, then FTP individual files
-- `$ npm run package` for entire theme, then upload zip and activate (delete old theme if using this method)
+- `$ npm run build` for changes to CSS and JS bundles; the files will be minified in your /dist folder.
+- `$ npm run package` for entire theme, then upload zip and activate (delete old theme if using this method). Running this command will build and minify the theme's assets and place a .zip archive of the theme in the `packaged` directory. This excludes the developer files/directories from your theme like `/node_modules`, `/src`, etc. to keep the theme lightweight for transferring the theme to a staging or production server.
 
 ## Features Beyond FoundationPress
 - FontAwesome is included within the SASS files
@@ -49,38 +49,6 @@ If you have not worked with a Sass-based workflow before, I would recommend read
 **********************************************
 
 # FoundationPress (copied from their README)
-
-## Quickstart
-
-### 1. Clone the repository and install with npm
-```bash
-$ cd my-wordpress-folder/wp-content/themes/
-$ git clone https://github.com/olefredrik/FoundationPress.git
-$ cd FoundationPress
-$ npm install
-```
-
-### 3. Get started
-
-```bash
-$ npm start
-```
-
-### 4. Compile assets for production
-
-When building for production, the CSS and JS will be minified. To minify the assets in your `/dist` folder, run
-
-```bash
-$ npm run build
-```
-
-#### To create a .zip file of your theme, run:
-
-```
-$ npm run package
-```
-
-Running this command will build and minify the theme's assets and place a .zip archive of the theme in the `packaged` directory. This excludes the developer files/directories from your theme like `/node_modules`, `/src`, etc. to keep the theme lightweight for transferring the theme to a staging or production server.
 
 ### Project structure
 
