@@ -2,15 +2,23 @@
 .front-hero {
 
   h1 {
+    color: #fff;
     font-family: 'Montserrat';
     font-weight: 700 !important;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
     text-transform: uppercase;
   }
   h2 {
+    color: #fff;
     font-family: 'Abel';
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
     text-transform: uppercase;
   }
-  img {}
+  img {
+    display: none;
+  }
 
   .marketing {
     @include xy-grid-container(55rem);
