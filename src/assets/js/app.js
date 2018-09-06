@@ -52,4 +52,11 @@ $(function(){
       gboHeader.removeClass('sticky');
     }
   };
+  // *************************************************************
+  // HOME PAGE HERO: Replace hero background with hero post image.
+  // *************************************************************
+  if($('.front-hero img').length === 1){
+    $('.front-hero').css('background-image', 'url(' + $('.front-hero img').attr('src') + ')');
+    $('.front-hero img').hide();
+  }
 });

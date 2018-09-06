@@ -73,6 +73,9 @@ The hero post format should be...
 <img src="https://placeimg.com/300/200/animals">
 ```
 
+### Informational Interlude
+This is the content below the hero image and is pulled from the content of the home page itself.
+
 ### Home Page Cards
 The home page news cards are pulled from the Home Page Card post category.  This approach allows for greater control over the appearance and content of the cards as opposed to parsing posts for truncated content.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
 
