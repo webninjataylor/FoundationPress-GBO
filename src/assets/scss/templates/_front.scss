@@ -1,5 +1,17 @@
 // Page header
 .front-hero {
+
+  h1 {
+    font-family: 'Montserrat';
+    font-weight: 700 !important;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'Abel';
+    text-transform: uppercase;
+  }
+  img {}
+
   .marketing {
     @include xy-grid-container(55rem);
     @include xy-grid;

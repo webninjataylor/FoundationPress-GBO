@@ -59,12 +59,25 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 - Google Fonts is included within header.php for Montserrat and Abel
 
 ### Home Page Hero
+The home page hero is pulled randomly from posts categorized as Home Page Hero. This approach allows for greater control over the appearance and content of the hero as opposed to parsing posts for truncated content.  Each page refresh will display a random hero image from the available posts tagged as Home Page Hero.  This is configured in front.php.
+
+```bash
+<?php $catquery = new WP_Query( 'category_name=home-page-hero&posts_per_page=1&orderby=rand' ); ?>
+```
+
+The hero post format should be...
+
+```bash
+<h1>Hero Title</h1>
+<h2>Hero Subtitle</h2>
+<img src="https://placeimg.com/300/200/animals">
+```
 
 ### Home Page Cards
 The home page news cards are pulled from the Home Page Card post category.  This approach allows for greater control over the appearance and content of the cards as opposed to parsing posts for truncated content.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
 
 ```bash
-<?php $catquery = new WP_Query( 'cat=9&posts_per_page=6' ); ?>
+<?php $catquery = new WP_Query( 'category_name=home-page-card&posts_per_page=6' ); ?>
 ```
 
 The posts can handle any HTML markup with the following suggested starting point...
