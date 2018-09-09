@@ -8,6 +8,7 @@ get_header(); ?>
 	<!-- GBO: Random Hero Image -->
 	<?php $catquery = new WP_Query( 'category_name=home-page-hero&posts_per_page=1&orderby=rand' ); ?>
 		<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+			<h1><?php the_title(); ?></h1>
 			<?php the_content(); ?> <!-- Can use the_title() and the_permalink() too -->
 		<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>
