@@ -52,7 +52,12 @@ get_header(); ?>
 		<div class="cards-container">
 			<?php $catquery = new WP_Query( 'category_name=home-page-card&posts_per_page=6' ); ?>
 				<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-					<div class="card"><?php the_content(); ?></div> <!-- Can use the_title() and the_permalink() too -->
+					<div class="card">
+						<div class="card-content">
+							<h4><?php the_title(); ?></h4>
+							<?php the_content(); ?>
+						</div>
+					</div> <!-- Can use the_title() and the_permalink() too -->
 				<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 		</div>

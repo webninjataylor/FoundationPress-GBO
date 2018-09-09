@@ -7,7 +7,12 @@
       @include xy-cell(12);
 
       .card-content {
-        padding: 1rem;
+        h4, p {
+          padding: 1rem;
+        }
+        img {
+          width: 100%;
+        }
       }
 
     }
