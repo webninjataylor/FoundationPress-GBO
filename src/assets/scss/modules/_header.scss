@@ -5,6 +5,15 @@
   a {
     color: #fff;
   }
+  .special-announcement {
+    color: $gbo-green;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 20px;
+    p {
+      display: inline-block;
+    }
+  }
   .menu-util {
     display: flex;
     justify-content: flex-end;
@@ -35,7 +44,8 @@
     .top-bar-left img {
       width: 100px;
     }
-    .menu-util {
+    .menu-util,
+    .special-announcement {
       display: none;
     }
     .menu-util-sticky {

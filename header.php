@@ -35,7 +35,13 @@
 		</div>
 
 		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
+			<div class="top-bar-left special-announcement">
+				<!-- GBO: Random Hero Image -->
+				<?php $catquery = new WP_Query( 'category_name=header-special-announcement&posts_per_page=1&orderby=rand' ); ?>
+					<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+						<?php the_title(); ?>: <?php the_content(); ?> <!-- Can use the_title() and the_permalink() too -->
+					<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
 			</div>
 			<div class="top-bar-right">
 				<!-- GBO: Social links, utility menu, and search -->

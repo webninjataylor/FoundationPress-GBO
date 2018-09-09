@@ -58,6 +58,9 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 - FontAwesome is included within the SASS files
 - Google Fonts is included within header.php for Montserrat and Abel
 
+### Header: Special Announcement
+The header is configured to display the latest special announcement blurb post which is tagged with the category of Header Special Announcement.  The title is pulled from the post title, and the remaining content should be a brief blurb which may contain a link.
+
 ### Home Page Hero
 The home page hero is pulled randomly from posts categorized as Home Page Hero. This approach allows for greater control over the appearance and content of the hero as opposed to parsing posts for truncated content.  Each page refresh will display a random hero image from the available posts tagged as Home Page Hero.  This is configured in front.php.
 
@@ -65,11 +68,10 @@ The home page hero is pulled randomly from posts categorized as Home Page Hero. 
 <?php $catquery = new WP_Query( 'category_name=home-page-hero&posts_per_page=1&orderby=rand' ); ?>
 ```
 
-The hero post format should be...
+The hero title is pulled from the post title, and the remaining format should be...
 
 ```bash
-<h1>Hero Title</h1>
-<h2>Hero Subtitle</h2>
+<h2>Hero Subtitle [Optional]</h2>
 <img src="https://placeimg.com/300/200/animals">
 ```
 
@@ -87,10 +89,7 @@ The posts can handle any HTML markup with the following suggested starting point
 
 ```bash
 <img src="[recommended 300x200 image]">
-<div class="card-content">
-    <h4>Card Title</h4>
-    <p>Card description or blurb, inclduing any links.</p>
-</div>
+<p>Card description or blurb, including any links.</p>
 ```
 
 ### Content Pages with Tabs
