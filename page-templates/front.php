@@ -6,7 +6,7 @@ get_header(); ?>
 
 <header class="front-hero" role="banner">
 	<!-- GBO: Random Hero Image -->
-	<?php $catquery = new WP_Query( 'category_name=home-page-hero&posts_per_page=1&orderby=rand' ); ?>
+	<?php $catquery = new WP_Query( 'category_name=big-story&posts_per_page=1&orderby=rand' ); ?>
 		<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 			<h1><?php the_title(); ?></h1>
 			<?php the_content(); ?> <!-- Can use the_title() and the_permalink() too -->
@@ -51,7 +51,7 @@ get_header(); ?>
 <div class="main-container">
   <div class="main-grid">
 		<div class="cards-container">
-			<?php $catquery = new WP_Query( 'category_name=home-page-card&posts_per_page=6' ); ?>
+			<?php $catquery = new WP_Query( 'category_name=front-page-news&posts_per_page=6' ); ?>
 				<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 					<div class="card">
 						<div class="card-content">

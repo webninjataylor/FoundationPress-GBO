@@ -59,13 +59,13 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 - Google Fonts is included within header.php for Montserrat and Abel
 
 ### Header: Special Announcement
-The header is configured to display the latest special announcement blurb post which is tagged with the category of Header Special Announcement.  The title is pulled from the post title, and the remaining content should be a brief blurb which may contain a link.
+The header is configured to display the latest special announcement blurb post which is tagged with the category of Special Announcement.  The title is pulled from the post title, and the remaining content should be a brief blurb which may contain a link.
 
 ### Home Page Hero
-The home page hero is pulled randomly from posts categorized as Home Page Hero. This approach allows for greater control over the appearance and content of the hero as opposed to parsing posts for truncated content.  Each page refresh will display a random hero image from the available posts tagged as Home Page Hero.  This is configured in front.php.
+The home page hero is pulled randomly from posts categorized as Big Story. This approach allows for greater control over the appearance and content of the hero as opposed to parsing posts for truncated content.  Each page refresh will display a random hero image from the available posts tagged as Big Story.  This is configured in front.php.
 
 ```bash
-<?php $catquery = new WP_Query( 'category_name=home-page-hero&posts_per_page=1&orderby=rand' ); ?>
+<?php $catquery = new WP_Query( 'category_name=big-story&posts_per_page=1&orderby=rand' ); ?>
 ```
 
 The hero title is pulled from the post title, and the remaining format should be...
@@ -79,10 +79,10 @@ The hero title is pulled from the post title, and the remaining format should be
 This is the content below the hero image and is pulled from the content of the home page itself.
 
 ### Home Page Cards
-The home page news cards are pulled from the Home Page Card post category.  This approach allows for greater control over the appearance and content of the cards as opposed to parsing posts for truncated content.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
+The home page news cards are pulled from the Front Page News post category.  This approach allows for greater control over the appearance and content of the cards as opposed to parsing posts for truncated content.  Any post tagged with this category will appear on the home page for up to six posts. The number of posts and the category can be changed in front.php...
 
 ```bash
-<?php $catquery = new WP_Query( 'category_name=home-page-card&posts_per_page=6' ); ?>
+<?php $catquery = new WP_Query( 'category_name=front-page-news&posts_per_page=6' ); ?>
 ```
 
 The posts can handle any HTML markup with the following suggested starting point...
