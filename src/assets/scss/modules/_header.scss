@@ -96,3 +96,10 @@
 .sticky + .main-container {
   padding-top: 120px;
 }
+
+@media screen and (max-width: 768px) {
+  #searchform,
+  .site-header .menu-util {
+    display: none;
+  }
+}

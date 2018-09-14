@@ -68,7 +68,8 @@ $(function(){
   // ***************************
   // HEADR: Utilty menu display.
   // ***************************
-  $('#menu-util-collapsed').click(function() {
+  $('#menu-util-collapsed').on('click', function() {
     $('.menu-util-sticky .menu').toggle();
+    console.log('CLICK TAP');
   });
 });
