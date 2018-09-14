@@ -59,4 +59,16 @@ $(function(){
     $('.front-hero').css('background-image', 'url(' + $('.front-hero img').attr('src') + ')');
     $('.front-hero img').hide();
   }
+  // ***************************
+  // HEADER: Search icon button.
+  // ***************************
+  $('#btn-search').click(function() {
+    $('#searchform').submit();
+  });
+  // ***************************
+  // HEADR: Utilty menu display.
+  // ***************************
+  $('#menu-util-collapsed').click(function() {
+    $('.menu-util-sticky .menu').toggle();
+  });
 });
