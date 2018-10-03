@@ -15,7 +15,13 @@ get_header(); ?>
 		<header>
 			<h1 class="entry-title"><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
 		</header>
-
+		<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	    <label>
+        <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'yourTheme' ); ?></span>
+        <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'yourTheme' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+	    </label>
+	    <button type="submit" class="search-submit"><span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'yourTheme' ); ?></span></button>
+	  </form>
 		<?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>

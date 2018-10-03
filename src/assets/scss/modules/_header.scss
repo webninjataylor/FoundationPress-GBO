@@ -87,6 +87,9 @@
       margin: 8px 15px 0 10px;
     }
   }
+  .site-mobile-title img {
+    width: 130px;
+  }
 }
 /* Adjustment for sticky nav placement when logged into WP as an admin. */
 .admin-bar .site-header.sticky {
@@ -98,8 +101,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  #wpadminbar li#wp-admin-bar-my-account {
+    display: none !important;
+  }
   #searchform,
   .site-header .menu-util {
     display: none;
+  }
+  .site-header.sticky .menu-util-sticky {
+    display: none !important;
   }
 }

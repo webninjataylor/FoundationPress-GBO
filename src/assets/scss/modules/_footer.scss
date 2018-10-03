@@ -48,3 +48,14 @@
     text-transform: uppercase;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-container #menu-footer, .footer a .footer-container #menu-footer {
+    justify-content: flex-start !important;
+  }
+}
+
+
+
+
+
+
